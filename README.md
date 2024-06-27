@@ -36,7 +36,7 @@ Code
 - To install the version for raspberry pi, follow this guide
 
 ```bash
-cd Exploration-Bot-with-Object-Detection-and-Avoidance
+cd Obstacle-Detection-and-Avoidance
 ```
 
 - Thats it! You can now run your desired file
