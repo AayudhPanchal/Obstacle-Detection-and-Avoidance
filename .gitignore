@@ -1,0 +1,8 @@
+# Ignore the config files
+cfg/
+
+# Ignore the models
+models/
+
+# Ignore the weights
+weights/
