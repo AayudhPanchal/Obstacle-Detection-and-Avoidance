@@ -24,7 +24,7 @@ object_tracker = {}  # Dictionary to store object tracking information
 next_object_id = 0  # Counter to assign unique IDs to detected objects
 
 def calculate_distance(w, width):
-    distance = (width * 20) / (w + 10)  # Adjust this formula based on your observations
+    distance = (width * 20) / (w + 10)
     return distance
 
 def calculate_speed(tracker, object_id, new_position, current_time, pixel_to_meter_ratio):
@@ -38,7 +38,7 @@ def calculate_speed(tracker, object_id, new_position, current_time, pixel_to_met
             return speed
     return 0
 
-# Define the conversion ratio (e.g., 0.05 meters per pixel)
+# Define the conversion ratio
 pixel_to_meter_ratio = 0.05
 
 while True:
