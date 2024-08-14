@@ -5,7 +5,7 @@ import time
 from collections import deque
 
 # Load YOLOv8 model
-model = YOLO('yolov8n.pt')  # Choose the appropriate YOLOv8 model based on your requirements
+model = YOLO('yolov8n.pt')
 
 # Load class names
 with open("coco.names", "r") as f:

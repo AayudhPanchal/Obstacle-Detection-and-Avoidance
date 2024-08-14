@@ -13,7 +13,8 @@ with open("coco.names", "r") as f:
 class_colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
 # Capture video from the webcam
-cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
 
 def calculate_distance(w):
    

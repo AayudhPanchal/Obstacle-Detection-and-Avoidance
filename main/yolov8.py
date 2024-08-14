@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import numpy as np
 
 # Load YOLOv8 model
-model = YOLO('../yolov8n.pt')  # You can use yolov8n.pt, yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt based on your need
+model = YOLO('../models/yolov8n.pt')
 
 # Load class names
 with open("coco.names", "r") as f:
@@ -12,13 +12,13 @@ with open("coco.names", "r") as f:
 # Define different colors for different classes
 class_colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
-# Capture video from the webcam 
-# To use webcam
 # cap = cv2.VideoCapture(0)
 cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
 
 while True:
+    
     ret, frame = cap.read()
+    
     if not ret:
         break
 
